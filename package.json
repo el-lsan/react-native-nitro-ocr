@@ -100,7 +100,7 @@
     "expo": ">=52.0.0",
     "react": "*",
     "react-native": "*",
-    "react-native-nitro-modules": "^0.35.0"
+    "react-native-nitro-modules": "0.36.5"
   },
   "peerDependenciesMeta": {
     "expo": {
