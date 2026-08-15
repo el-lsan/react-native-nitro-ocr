@@ -1,5 +1,6 @@
 import Foundation
 import ImageIO
+import NitroModules
 import Photos
 import UIKit
 
