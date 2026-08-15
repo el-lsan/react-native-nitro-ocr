@@ -98,7 +98,7 @@ enum ImageSourceResolver {
       }
 
       resultImage = cgImage
-      resultOrientation = CGImagePropertyOrientation(rawValue: UInt32(orientation)) ?? .up
+      resultOrientation = orientation
     }
 
     if let error = loadError {
@@ -150,18 +150,5 @@ enum ImageSourceResolver {
     case .rightMirrored: return .rightMirrored
     @unknown default: return .up
     }
-  }
-}
-
-/// Simple error type for throwing descriptive errors.
-struct RuntimeError: LocalizedError {
-  let message: String
-
-  init(_ message: String) {
-    self.message = message
-  }
-
-  var errorDescription: String? {
-    return message
   }
 }
